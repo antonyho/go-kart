@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"github.com/antonyho/go-kart/models/status"
 	"github.com/astaxie/beego"
 )
 
@@ -15,9 +16,11 @@ type HealthController struct {
 // @Success 200 string status
 // @Failure 400 Bad request
 // @Accept json
-// @router / [get]
+// @router /status [get]
 func (c *HealthController) Status() {
-	status := "Running"
-	c.Data["json"] = &status
+	resp := &status.System{
+		Status: "Running",
+	}
+	c.Data["json"] = &resp
 	c.ServeJSON()
 }

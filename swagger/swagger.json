@@ -10,10 +10,10 @@
     },
     "basePath": "/v1",
     "paths": {
-        "/status/": {
+        "/system/status": {
             "get": {
                 "tags": [
-                    "status"
+                    "system"
                 ],
                 "summary": "Service status of this shopping cart",
                 "description": "Query the status of this shopping cart",
@@ -37,7 +37,7 @@
     },
     "tags": [
         {
-            "name": "status",
+            "name": "system",
             "description": "Entry Point of API\n"
         }
     ]

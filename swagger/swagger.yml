@@ -7,10 +7,10 @@ info:
     email: ntonyworkshop@gmail.com
 basePath: /v1
 paths:
-  /status/:
+  /system/status:
     get:
       tags:
-      - status
+      - system
       summary: Service status of this shopping cart
       description: Query the status of this shopping cart
       operationId: HealthController.Service status
@@ -24,6 +24,6 @@ paths:
         "400":
           description: Bad request
 tags:
-- name: status
+- name: system
   description: |
     Entry Point of API
