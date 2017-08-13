@@ -1,0 +1,44 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "go-kart API",
+        "description": "RESTful API for \"go-kart\" shopping cart written in Go",
+        "version": "1.0.0",
+        "contact": {
+            "email": "ntonyworkshop@gmail.com"
+        }
+    },
+    "basePath": "/v1",
+    "paths": {
+        "/status/": {
+            "get": {
+                "tags": [
+                    "status"
+                ],
+                "summary": "Service status of this shopping cart",
+                "description": "Query the status of this shopping cart",
+                "operationId": "HealthController.Service status",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "string status"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "status",
+            "description": "Entry Point of API\n"
+        }
+    ]
+}
