@@ -13,6 +13,9 @@
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
 
+# Gogland project configuration
+.idea/
+
 # Beego generated files
 lastupdate.tmp
 go-kart
