@@ -13,7 +13,7 @@ type HealthController struct {
 // @Title Service status
 // @Summary Service status of this shopping cart
 // @Description Query the status of this shopping cart
-// @Success 200 string status
+// @Success 200 {object} models.status.System
 // @Failure 400 Bad request
 // @Accept json
 // @router /status [get]
