@@ -14,8 +14,6 @@ type HealthController struct {
 // @Summary Service status of this shopping cart
 // @Description Query the status of this shopping cart
 // @Success 200 {object} models.status.System
-// @Failure 400 Bad request
-// @Accept json
 // @router /status [get]
 func (c *HealthController) Status() {
 	resp := &status.System{
