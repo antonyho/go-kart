@@ -18,18 +18,9 @@
                 "summary": "Service status of this shopping cart",
                 "description": "Query the status of this shopping cart",
                 "operationId": "HealthController.Service status",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
                 "responses": {
                     "200": {
-                        "description": "string status"
-                    },
-                    "400": {
-                        "description": "Bad request"
+                        "description": "{string} status"
                     }
                 }
             }
