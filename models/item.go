@@ -25,3 +25,7 @@ type OrderedItem struct {
 	Ref      Item  `gorm:"AssociationForeignKey:RefID"`
 	Order    uint  `gorm:"unique_index:idx_item_order"`
 }
+
+func (i OrderedItem) Place() uint {
+	return i.Order
+}
